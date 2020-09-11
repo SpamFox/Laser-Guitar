@@ -26,12 +26,7 @@ void inputsRead()
   {
     if(sw1New == LOW)
     {
-      multiString = true;
-    }
-    if(sw1New == HIGH)
-    {
-      multiString = false;
-      shutDownAll();
+      multiString = !multiString;
     }
   }
   sw1Old = sw1New;

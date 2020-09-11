@@ -1,4 +1,4 @@
-/*
++''   /*
  * This is the program developed by the Visual Music Z team for making an electronic guitar using an Arduino UNO, to replicate the
  * basic functions of an electric guitar. Our website: http://visualmusicz.com/
  * 
@@ -190,48 +190,64 @@ void loop()   //Part of the code that runs over and over
         instrument = 24;    //New instrument: Acoustic guitar (nylon)
         shutDownAll();
         noteSendAll(192,00,instrument);
+        btmodule.end();
+        tftlcd.begin(9600);
       }
       else if(btdata == '4')
       {
         instrument = 29;    //New instrument: Electric guitar (clean)
         shutDownAll();
         noteSendAll(192,00,instrument);
+        btmodule.end();
+        tftlcd.begin(9600);
       }
       else if(btdata == '1')
       {
         instrument = 32;    //New instrument: Acoustic bass
         shutDownAll();
         noteSendAll(192,00,instrument);
+        btmodule.end();
+        tftlcd.begin(9600);
       }
       else if(btdata == '2')
       {
         instrument = 33;    //New instrument: Electric bass (finger)
         shutDownAll();
         noteSendAll(192,00,instrument);
+        btmodule.end();
+        tftlcd.begin(9600);
       }
       else if(btdata == '7')
       {
         instrument = 40;    //New instrument: Violin
         shutDownAll();
         noteSendAll(192,00,instrument);
+        btmodule.end();
+        tftlcd.begin(9600);
       }
       else if(btdata == '8')
       {
         instrument = 56;    //New instrument: Trumpet
         shutDownAll();
         noteSendAll(192,00,instrument);
+        btmodule.end();
+        tftlcd.begin(9600);
       }
       else if(btdata == '5')
       {
         instrument = 73;    //New instrument: Flute
         shutDownAll();
         noteSendAll(192,00,instrument);
+        btmodule.end();
+        tftlcd.begin(9600);
       }
       else if(btdata == '6')
       {
         instrument = 79;    //New instrument: Ocarina
         shutDownAll();
         noteSendAll(192,00,instrument);
+        btmodule.end();
+        tftlcd.begin(9600);
       }
       else if(btdata == 's')
       {
